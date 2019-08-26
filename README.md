@@ -172,7 +172,7 @@ Use JupyterHub on your midsw205 cloud instance to create a new python3 notebook.
 
 #### Report
 - Short description of findings and recommendations 
-- If needed, add data visualizations to support recommendations 
+- Add data visualizations to support recommendations 
 
 ### Resource: see example .ipynb file 
 
