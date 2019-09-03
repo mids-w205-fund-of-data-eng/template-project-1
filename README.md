@@ -51,6 +51,20 @@ Paste your SQL query and answer the question in a sentence.
 - How many bikes are there?
 
 
+### Bonus activity queries
+
+The bike share database offers multiple tables that can be joined to learn more interesting facts about the bike share business across all regions. These advanced queries are designed to challenge you to explore the other tables, using only the available metadata to create views that give you a broader understanding of the overall volumes across the regions(each region has multiple stations)
+
+- Top 25 popular station pairs in each region
+
+- Top 3 most popular regions(stations belong within 1 region)
+
+- Total trips for each short station name in each region
+
+- What are the top 10 used bikes in each of the top 3 region. these bikes could be in need of more frequent maintenance.
+
+
+
 ### Questions of your own
 - Make up 3 questions and answer them using the Bay Area Bike Share Trips Data.
 - Use the SQL tutorial (https://www.w3schools.com/sql/default.asp) to help you with mechanics.
