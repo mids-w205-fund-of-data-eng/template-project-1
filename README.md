@@ -11,15 +11,22 @@
 - You're a data scientist at Lyft Bay Wheels (https://www.lyft.com/bikes/bay-wheels), formerly known as Ford GoBike, the
   company running Bay Area Bikeshare. You are trying to increase ridership, and
   you want to offer deals through the mobile app to do so. What deals do you
-  offer though? Currently, your company has several options which can change over time.  Please visit their website to see the current offers.  Frequent offer classes include: Single Ride, Monthly Membership, Annual Membership, Bike Share for All, Access Pass, and Corporate Membership.
+  offer though? Currently, your company has several options which can change over time.  Please visit the website to see the current offers and other marketing information.  Frequent offers include: Single Ride, Monthly Membership, Annual Membership, Bike Share for All, Access Pass, Corporate Membership, etc.
 
 - Through this project, you will answer these questions: 
+
   * What are the 5 most popular trips that you would call "commuter trips"? 
+  
   * What are your recommendations for offers (justify based on your findings)?
 
-Please note that there are no exact answers to the above questions, just like in the proverbial real world.  This is not a simple exercise where each question above will have a simple SQL query. It is an exercise in analytics over inexact and dirty data. You won't find a column in a table labeled "commuter trip".  You will need to analyze the data to determine your own definition of a communter trip and then write SQL queries to find the communter trips. You will find you will need to do quite a bit of data exploration using SQL to help you come up with your definition of commuter trip. In data exploration process, you will find a lot of dirty data, that you will need to either clean or filter out.
+- Please note that there are no exact answers to the above questions, just like in the proverbial real world.  This is not a simple exercise where each question above will have a simple SQL query. It is an exercise in analytics over inexact and dirty data. You won't find a column in a table labeled "commuter trip".  You will need to analyze the data to determine your own definition of a communter trip and then write SQL queries to find the communter trips. You will find you will need to do quite a bit of data exploration using SQL to help you come up with your definition of commuter trip. In data exploration process, you will find a lot of dirty data, that you will need to either clean or filter out.
 
-You can make any recommendations regarding the offers, including, but not limited to: market offers differently to generate more revenue, remove offers that are not working, modify exising offers to generate more revenue, create new offers for hidden business opportunities you have found, etc. 
+- You can make any recommendations regarding the offers, including, but not limited to: 
+ * market offers differently to generate more revenue 
+ * remove offers that are not working 
+ * modify exising offers to generate more revenue
+ * create new offers for hidden business opportunities you have found
+ * etc. 
 
 #### All Work MUST be done in the Google Cloud Platform
 
@@ -67,8 +74,19 @@ BigQuery: https://cloud.google.com/bigquery/
 
 Public Datasets: https://cloud.google.com/bigquery/public-data  Search on bike share and click on it and follow instruction to add the pin to the Google BigQuery interface.
 
-The Bay Bike Share has two datasets: a static one and a dynamic one.   The static one is 
+The Bay Bike Share has two datasets: a static one and a dynamic one.  The static one covers an historic period of about 3 years.  The dynamic one updates every 10 minutes or so.
 
+The static one is the one we will use in class and in this project.  The reason is that is much easier to learn SQL against a static target instead of a moving target.
+
+The tables we will be using in this class are in the dataset **san_francisco** :
+
+* bikeshare_stations
+
+* bikeshare_status
+
+* bikeshare_trips
+
+The dynamic tables are found in the dataset san_francisco_bikeshare.
 
 ### Some initial queries
 
@@ -81,7 +99,7 @@ Paste your SQL query and answer the question in a sentence.  Be sure you properl
 - How many bikes are there?
 
 
-### Bonus activity queries
+### Additional queries
 
 The bike share database offers multiple tables that can be joined to learn more interesting facts about the bike share business across all regions. These advanced queries are designed to challenge you to explore the other tables, using only the available metadata to create views that give you a broader understanding of the overall volumes across the regions(each region has multiple stations)
 
