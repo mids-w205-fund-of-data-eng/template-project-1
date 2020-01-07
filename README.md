@@ -6,26 +6,45 @@
   different ways to use those datasets, you will use the web UI (BiqQuery) and
   the command-line tools, and work with them in jupyter notebooks.
 
-- We will be using the Bay Area Bike Share Trips Data.
-
-BigQuery has 
-  (https://cloud.google.com/bigquery/public-data/bay-bike-share). 
-
 #### Problem Statement
 
-- You're a data scientist at Ford GoBike (https://www.fordgobike.com/), the
+- You're a data scientist at Lyft Bay Wheels (https://www.lyft.com/bikes/bay-wheels), formerly known as Ford GoBike, the
   company running Bay Area Bikeshare. You are trying to increase ridership, and
   you want to offer deals through the mobile app to do so. What deals do you
-  offer though? Currently, your company has three options: a flat price for a
-  single one-way trip, a day pass that allows unlimited 30-minute rides for 24
-  hours and an annual membership. 
+  offer though? Currently, your company has several options which can change over time.  Please visit their website to see the current offers.  Frequent offer classes include: Single Ride, Monthly Membership, Annual Membership, Bike Share for All, Access Pass, and Corporate Membership.
 
 - Through this project, you will answer these questions: 
-  * What are the 5 most popular trips that you would call "commuter trips"?
+  * What are the 5 most popular trips that you would call "commuter trips"? 
   * What are your recommendations for offers (justify based on your findings)?
 
+Please note that there are no exact answers to the above questions, just like in the proverbial real world.  This is not a simple exercise where each question above will have a simple SQL query. It is an exercise in analytics over inexact and dirty data. You won't find a column in a table labeled "commuter trip".  You will need to analyze the data to determine your own definition of a communter trip and then write SQL queries to find the communter trips. You will find you will need to do quite a bit of data exploration using SQL to help you come up with your definition of commuter trip. In data exploration process, you will find a lot of dirty data, that you will need to either clean or filter out.
 
----
+You can make any recommendations regarding the offers, including, but not limited to: market offers differently to generate more revenue, remove offers that are not working, modify exising offers to generate more revenue, create new offers for hidden business opportunities you have found, etc. 
+
+#### All Work MUST be done in the Google Cloud Platform
+
+One of the major objectives of W205 is for students to learn how to work in the cloud.  It's one of the biggest requests we get from employers who court our MIDS students.  In most businesses today, it's virtually impossible to justify doing anything in house anymore from a cost / benefit analysis.  Even when work is done in house, it's usually an in house cloud with a very similar architecture to the commercial clouds.
+
+In the past, students have tried to do the work outside of the GCP, using their desktop or other environments.  Please don't so this.  For one reason, it's cheating, which can subject a student to academic misconduct charges.  Another reason is that this project is a great way to pick up some cloud skills, much needed in industry.
+
+#### The Majority of Work must be done using BigQuery SQL
+
+One of the major objectives of this project is to gain skills executing SQL against a big data scale-out SQL platform, such as Google BigQuery.  You will find BigQuery SQL similar to conventional SQL platforms (Oracle, mySQL, SQLite, MS SQL Server, etc.), but also you will experience some frustrations only found in big data SQL which will be a great learning experience.
+
+You should primarily use BigQuery SQL.  You can make intermediate temporary tables (or view) in your own dataset in BigQuery as you like.  These make data exploration much easier.  It's much easier when you have made a temporary table with only clean data, filtered rows, filtered columns, new columns, summary data, etc.  
+
+The results of your BigQuery SQL will be read into Pandas, where you will use the skills you learned in the Python class to print formatted Pandas tables, simple data visualizations using Seaborn / Matplotlib, etc.  
+
+You can use Pandas for simple transformations, but remember the bulk of work should be done using Google BigQuery.
+
+In the past, some students have tried to pull down the entire dataset into Pandas or even into another SQL database.  Please do not do this, as before it's cheating, and you are not picking up SQL skills against a big data scale-out SQL platform.
+
+#### GitHub Procedures
+
+In your Python class you used GitHub, with a single repo for all assignments, where you committed without 
+
+
+
 
 ## Part 1 - Querying Data with BigQuery
 
