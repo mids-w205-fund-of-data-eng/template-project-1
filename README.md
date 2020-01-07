@@ -49,7 +49,7 @@ In the past, some students have pulled all of the data (or large parts of the da
 
 #### Temporary Tables and Views
 
-You can make intermediate temporary tables or view in your own dataset in BigQuery as you like.  Actually, this is a great way to work!  These make data exploration much easier.  It's much easier when you have made temporary tables or views with only clean data, filtered rows, filtered columns, new columns, summary data, etc.  
+You can make intermediate temporary tables or views in your own dataset in BigQuery as you like.  Actually, this is a great way to work!  These make data exploration much easier.  It's much easier when you have made temporary tables or views with only clean data, filtered rows, filtered columns, new columns, summary data, etc.  
 
 If you use intermediate temporary tables or views, you should include the SQL used to create these, along with a brief note mentioning that you used the temporary table or view.
 
@@ -63,9 +63,29 @@ You can use Pandas for simple transformations, but remember the bulk of work sho
 
 In your Python class you used GitHub, with a single repo for all assignments, where you committed without doing a pull request.  In this class, we will try to mimic the real world more closely, so our procedures will be enhanced. 
 
-Each project, including this one, will have it's own repo.  Using the git command line: clone the repo down into your cloud virtual machine; leave the master branch untouched; create a branch called "assignment"; only make changes to the assignment branch; stage, commit, and push changes frequently so as to not lose any work;  NEVER merge the branch!  Once you are finished: create 1 and only 1 pull request comparing the assignment branch to the master branch with your instructor as the reviewer.
+Each project, including this one, will have it's own repo.  
 
-If you decide to make more changes after you have created a pull request, you can simply close the pull request (without merge!), make more changes, stage, commit, push, and create a final pull request when you are done.
+Using the git command line: clone down the repo, leave the master branch untouched, create an assignment branch, and move to that branch:
+- Open a linux command line to your virtual machine and be sure you are logged in as jupyter.
+- Create a ~/w205 directory if it does not already exist `mkdir ~/w205`
+- Change directory into the ~/w205 directory `cd ~/w205`
+- Clone down your repo `git clone <https url for your repo>`
+- Change directory into the repo `cd <repo name>`
+- Create an assignment branch `git branch assignment`
+- Checkout the assignment branch `git checkout assignment`
+
+The previous steps only need to be done once.  Once you your clone is on the assignment branch it will remain on that branch unless you checkout another branch.
+
+The project workflow follows this pattern, which may be repeated as many times as needed.  In fact it's best to do this frequently as it saves your work into GitHub in case your virtual machine becomes corrupt:
+- Make changes to existing files as needed.
+- Add new files as needed
+- Stage modified files `git add <filename>`
+- Commit staged files `git commit -m "<meaningful comment about your changes>"
+- Push the commit on your assignment branch from your clone to GitHub `git push origin assignment`
+
+Once you are done, go to the GitHub web interface and create a pull request comparing the assignment branch to the master branch.  Add your instructor, and only your instructor, as the reviewer.  The date and time stamp of the pull request is considered the submission time for late penalties. 
+
+If you decide to make more changes after you have created a pull request, you can simply close the pull request (without merge!), make more changes, stage, commit, push, and create a final pull request when you are done.  Note that the last data and time stamp of the last pull request will be considered the submission time for late penalties.
 
 ---
 
