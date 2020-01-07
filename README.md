@@ -6,7 +6,9 @@
   different ways to use those datasets, you will use the web UI (BiqQuery) and
   the command-line tools, and work with them in jupyter notebooks.
 
-- We will be using the Bay Area Bike Share Trips Data
+- We will be using the Bay Area Bike Share Trips Data.
+
+BigQuery has 
   (https://cloud.google.com/bigquery/public-data/bay-bike-share). 
 
 #### Problem Statement
