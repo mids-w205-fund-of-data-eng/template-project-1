@@ -121,7 +121,8 @@ TBD
 
 
 ### Questions of your own
-- Make up 3 questions and answer them using the Bay Area Bike Share Trips Data.
+- Make up 3 questions and answer them using the Bay Area Bike Share Trips Data.  These questions MUST be different than any of the questions and queries you ran above.
+
 - Use the SQL tutorial (https://www.w3schools.com/sql/default.asp) to help you with mechanics.
 
 - Question 1: 
@@ -138,17 +139,7 @@ TBD
 
 ---
 
-## Part 2 - Querying data from the BigQuery CLI - set up 
-
-### What is Google Cloud SDK?
-- Read: https://cloud.google.com/sdk/docs/overview
-
-- If you want to go further, https://cloud.google.com/sdk/docs/concepts has
-  lots of good stuff.
-
-### Get Going
-
-- Install Google Cloud SDK: https://cloud.google.com/sdk/docs/
+## Part 2 - Querying data from the BigQuery CLI 
 
 - Try BQ from the command line:
 
@@ -164,7 +155,7 @@ TBD
 ### Queries
 
 1. Rerun last week's queries using bq command line tool (Paste your bq
-   queries):
+   queries and results here, using properly formatted using markdown):
 
 - What's the size of this dataset? (i.e., how many trips)
 
@@ -172,7 +163,7 @@ TBD
 
 - How many bikes are there?
 
-2. New Query (Paste your SQL query and answer the question in a sentence):
+2. New Query (Paste your SQL query and answer the question in a sentence, using properly formatted markdown):
 
 - How many trips are in the morning vs in the afternoon?
 
@@ -186,6 +177,8 @@ below, add as many questions as you need).
 - Question 2: 
 
 - Question 3: 
+
+- Question 4: 
 
 - ...
 
@@ -225,7 +218,7 @@ answers below.
 
 ### Get Going
 
-Use JupyterHub on your midsw205 cloud instance to create a new python3 notebook. 
+Create a Jupyter Notebook against a Python 3 kernel named Project3.ipynb in the assignment branch of your repo.
 
 #### Run queries in the notebook 
 
@@ -239,9 +232,21 @@ Use JupyterHub on your midsw205 cloud instance to create a new python3 notebook.
 - Query those tables the same way as in `example.ipynb`
 
 
-#### Report
-- Short description of findings and recommendations 
-- Add data visualizations to support recommendations 
+#### Report in the form of the Jupter Notebook
+
+- Using markdown cells, MUST definitively state and answer the two project questions:
+
+  * What are the 5 most popular trips that you would call "commuter trips"? 
+  
+  * What are your recommendations for offers (justify based on your findings)?
+
+- For any temporary tables (or views) that you created, include the SQL in markdown cells
+
+- Use code cells for SQL you ran to load into Pandas
+
+- Use code cells to create Pandas formatted output tables (at least 3) to present or support your findings
+
+- Use code cells to create simple data visualizations using Seaborn / Matplotlib (at least 2) to present or support your findings
 
 ### Resource: see example .ipynb file 
 
