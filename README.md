@@ -47,26 +47,32 @@ Each project, including this one, will have it's own repo.  Using the git comman
 
 If you decide to make more changes after you have created a pull request, you can simply close the pull request (without merge!), make more changes, stage, commit, push, and create a final pull request when you are done.
 
-#### We have broken it down into 3 parts, about 1 weeks work each to help you stay on track, however, you will only turn in the project once time at the end or part 3!
+## Parts 1, 2, 3
+
+We have broken it down into 3 parts, about 1 weeks work each to help you stay on track, however, you will only turn in the project once time at the end or part 3!
+
+In Part 1, we will query using the Google BigQuery GUI interface in the cloud.
+
+In Part 2, we will query using the Linux command line from our virtual machine in the cloud.
+
+In Part 3, we will query from a Jupyter Notebook in our virtual machine in the cloud, save the results into Pandas, and present a report enhanced by Pandas output tables and simple data visualizations using Seaborn / Matplotlib.
 
 ## Part 1 - Querying Data with BigQuery
 
-### What is Google Cloud?
-- Read: https://cloud.google.com/docs/overview/
+### Google Cloud Helpful Links
 
-### Get Going
+Read: https://cloud.google.com/docs/overview/
 
-- Go to https://cloud.google.com/bigquery/
-- Click on "Try it Free"
-- It asks for credit card, but you get $300 free and it does not autorenew after the $300 credit is used, so go ahead (OR CHANGE THIS IF SOME SORT OF OTHER ACCESS INFO)
-- Now you will see the console screen. This is where you can manage everything for GCP
-- Go to the menus on the left and scroll down to BigQuery
-- Now go to https://cloud.google.com/bigquery/public-data/bay-bike-share 
-- Scroll down to "Go to Bay Area Bike Share Trips Dataset" (This will open a BQ working page.)
+BigQuery: https://cloud.google.com/bigquery/
+
+Public Datasets: https://cloud.google.com/bigquery/public-data  Search on bike share and click on it and follow instruction to add the pin to the Google BigQuery interface.
+
+The Bay Bike Share has two datasets: a static one and a dynamic one.   The static one is 
 
 
 ### Some initial queries
-Paste your SQL query and answer the question in a sentence.
+
+Paste your SQL query and answer the question in a sentence.  Be sure you properly format your queries and results using markdown. 
 
 - What's the size of this dataset? (i.e., how many trips)
 
