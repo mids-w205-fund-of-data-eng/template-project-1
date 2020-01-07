@@ -41,10 +41,13 @@ In the past, some students have tried to pull down the entire dataset into Panda
 
 #### GitHub Procedures
 
-In your Python class you used GitHub, with a single repo for all assignments, where you committed without 
+In your Python class you used GitHub, with a single repo for all assignments, where you committed without doing a pull request.  In this class, we will try to mimic the real world more closely, so our procedures will be enhanced. 
 
+Each project, including this one, will have it's own repo.  Using the git command line: clone the repo down into your cloud virtual machine; leave the master branch untouched; create a branch called "assignment"; only make changes to the assignment branch; stage, commit, and push changes frequently so as to not lose any work;  NEVER merge the branch!  Once you are finished: create 1 and only 1 pull request comparing the assignment branch to the master branch with your instructor as the reviewer.
 
+If you decide to make more changes after you have created a pull request, you can simply close the pull request (without merge!), make more changes, stage, commit, push, and create a final pull request when you are done.
 
+#### We have broken it down into 3 parts, about 1 weeks work each to help you stay on track, however, you will only turn in the project once time at the end or part 3!
 
 ## Part 1 - Querying Data with BigQuery
 
