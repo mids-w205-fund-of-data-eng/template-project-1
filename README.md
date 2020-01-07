@@ -107,6 +107,8 @@ We have broken it down into 3 parts, about 1 week's work each to help you stay o
 
 ### Google Cloud Helpful Links
 
+SQL tutorial: https://www.w3schools.com/sql/default.asp
+
 Read: https://cloud.google.com/docs/overview/
 
 BigQuery: https://cloud.google.com/bigquery/
@@ -160,8 +162,6 @@ from `bigquery-public-data.san_francisco_bikeshare.bikeshare_station_info`
 ### Questions of your own
 - Make up 3 questions and answer them using the Bay Area Bike Share Trips Data.  These questions MUST be different than any of the questions and queries you ran above.
 
-- Use the SQL tutorial (https://www.w3schools.com/sql/default.asp) to help you with mechanics.
-
 - Question 1: 
   * Answer:
   * SQL query:
@@ -200,7 +200,7 @@ from `bigquery-public-data.san_francisco_bikeshare.bikeshare_station_info`
 
   * How many bikes are there?
 
-2. New Query (Paste your SQL query and answer the question in a sentence, using properly formatted markdown):
+2. New Query (Run using bq and paste your SQL query and answer the question in a sentence, using properly formatted markdown):
 
   * How many trips are in the morning vs in the afternoon?
 
@@ -259,7 +259,9 @@ Create a Jupyter Notebook against a Python 3 kernel named Project_1.ipynb in the
 
 #### Run queries in the notebook 
 
-You can run queries 
+At the end of this document is an example Jupyter Notebook you can take a look at and run.  
+
+You can run queries using the "bang" command to shell out, such as this:
 
 ```
 ! bq query --use_legacy_sql=FALSE '<your-query-here>'
@@ -268,8 +270,21 @@ You can run queries
 - NOTE: 
 - Queries that return over 16K rows will not run this way, 
 - Run groupbys etc in the bq web interface and save that as a table in BQ. 
+- Max rows is defaulted to 100, use the command line parameter `--max_rows=1000000` to make it larger
 - Query those tables the same way as in `example.ipynb`
 
+Or you can use the magic commands, such as this:
+
+```sql
+%%bigquery my_panda_data_frame
+
+select start_station_name, end_station_name
+from `bigquery-public-data.san_francisco.bikeshare_trips`
+where start_station_name <> end_station_name
+limit 10
+
+my_panda_data_frame
+```
 
 #### Report in the form of the Jupter Notebook named Project_1.ipynb
 
@@ -281,7 +296,7 @@ You can run queries
 
 - For any temporary tables (or views) that you created, include the SQL in markdown cells
 
-- Use code cells for SQL you ran to load into Pandas
+- Use code cells for SQL you ran to load into Pandas, either using the !bq or the magic commands
 
 - Use code cells to create Pandas formatted output tables (at least 3) to present or support your findings
 
