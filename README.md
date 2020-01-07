@@ -22,11 +22,11 @@
 - Please note that there are no exact answers to the above questions, just like in the proverbial real world.  This is not a simple exercise where each question above will have a simple SQL query. It is an exercise in analytics over inexact and dirty data. You won't find a column in a table labeled "commuter trip".  You will need to analyze the data to determine your own definition of a communter trip and then write SQL queries to find the communter trips. You will find you will need to do quite a bit of data exploration using SQL to help you come up with your definition of commuter trip. In data exploration process, you will find a lot of dirty data, that you will need to either clean or filter out.
 
 - You can make any recommendations regarding the offers, including, but not limited to: 
- * market offers differently to generate more revenue 
- * remove offers that are not working 
- * modify exising offers to generate more revenue
- * create new offers for hidden business opportunities you have found
- * etc. 
+  * market offers differently to generate more revenue 
+  * remove offers that are not working 
+  * modify exising offers to generate more revenue
+  * create new offers for hidden business opportunities you have found
+  * etc. 
 
 #### All Work MUST be done in the Google Cloud Platform
 
@@ -54,15 +54,19 @@ Each project, including this one, will have it's own repo.  Using the git comman
 
 If you decide to make more changes after you have created a pull request, you can simply close the pull request (without merge!), make more changes, stage, commit, push, and create a final pull request when you are done.
 
+---
+
 ## Parts 1, 2, 3
 
-We have broken it down into 3 parts, about 1 weeks work each to help you stay on track, however, you will only turn in the project once time at the end or part 3!
+We have broken it down into 3 parts, about 1 week's work each to help you stay on track, however, **you will only turn in the project once  at the end of part 3!**
 
 In Part 1, we will query using the Google BigQuery GUI interface in the cloud.
 
 In Part 2, we will query using the Linux command line from our virtual machine in the cloud.
 
 In Part 3, we will query from a Jupyter Notebook in our virtual machine in the cloud, save the results into Pandas, and present a report enhanced by Pandas output tables and simple data visualizations using Seaborn / Matplotlib.
+
+---
 
 ## Part 1 - Querying Data with BigQuery
 
@@ -74,19 +78,17 @@ BigQuery: https://cloud.google.com/bigquery/
 
 Public Datasets: https://cloud.google.com/bigquery/public-data  Search on bike share and click on it and follow instruction to add the pin to the Google BigQuery interface.
 
-The Bay Bike Share has two datasets: a static one and a dynamic one.  The static one covers an historic period of about 3 years.  The dynamic one updates every 10 minutes or so.
+- The Bay Bike Share has two datasets: a static one and a dynamic one.  The static one covers an historic period of about 3 years.  The dynamic one updates every 10 minutes or so.  The static one is the one we will use in class and in this project.  The reason is that is much easier to learn SQL against a static target instead of a moving target.
 
-The static one is the one we will use in class and in this project.  The reason is that is much easier to learn SQL against a static target instead of a moving target.
+- The static tables we will be using in this class are in the dataset **san_francisco** :
 
-The tables we will be using in this class are in the dataset **san_francisco** :
+  * bikeshare_stations
 
-* bikeshare_stations
+  * bikeshare_status
 
-* bikeshare_status
+  * bikeshare_trips
 
-* bikeshare_trips
-
-The dynamic tables are found in the dataset san_francisco_bikeshare.
+- The dynamic tables are found in the dataset **san_francisco_bikeshare**
 
 ### Some initial queries
 
@@ -98,10 +100,16 @@ Paste your SQL query and answer the question in a sentence.  Be sure you properl
 
 - How many bikes are there?
 
+### Advanced queries
 
-### Additional queries
+The bike share dynamic dataset offers multiple tables that can be joined to learn more interesting facts about the bike share business across all regions. These advanced queries are designed to challenge you to explore the other tables, using only the available metadata to create views that give you a broader understanding of the overall volumes across the regions(each region has multiple stations)
 
-The bike share database offers multiple tables that can be joined to learn more interesting facts about the bike share business across all regions. These advanced queries are designed to challenge you to explore the other tables, using only the available metadata to create views that give you a broader understanding of the overall volumes across the regions(each region has multiple stations)
+We can create a view against the dynamic dataset to join to our static dataset.
+
+Here is some code to create the view:
+```sql
+TBD
+```
 
 - Top 25 popular station pairs in each region
 
@@ -110,7 +118,6 @@ The bike share database offers multiple tables that can be joined to learn more 
 - Total trips for each short station name in each region
 
 - What are the top 10 used bikes in each of the top 3 region. these bikes could be in need of more frequent maintenance.
-
 
 
 ### Questions of your own
@@ -128,8 +135,6 @@ The bike share database offers multiple tables that can be joined to learn more 
 - Question 3:
   * Answer:
   * SQL query:
-
-
 
 ---
 
@@ -203,13 +208,16 @@ answers below.
 - Question 3:
   * Answer:
   * SQL query:
-
+  
+- Question 4:
+  * Answer:
+  * SQL query:
+  
 - ...
 
 - Question n:
   * Answer:
   * SQL query:
-
 
 ---
 
@@ -218,7 +226,6 @@ answers below.
 ### Get Going
 
 Use JupyterHub on your midsw205 cloud instance to create a new python3 notebook. 
-
 
 #### Run queries in the notebook 
 
