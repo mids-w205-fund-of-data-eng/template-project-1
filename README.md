@@ -63,7 +63,9 @@ You can use Pandas for simple transformations, but remember the bulk of work sho
 
 In your Python class you used GitHub, with a single repo for all assignments, where you committed without doing a pull request.  In this class, we will try to mimic the real world more closely, so our procedures will be enhanced. 
 
-Each project, including this one, will have it's own repo.  
+Each project, including this one, will have it's own repo.
+
+Important:  in w205, we will NEVER MERGE!
 
 Using the git command line: clone down the repo, leave the master branch untouched, create an assignment branch, and move to that branch:
 - Open a linux command line to your virtual machine and be sure you are logged in as jupyter.
@@ -113,7 +115,7 @@ Public Datasets: https://cloud.google.com/bigquery/public-data  Search on bike s
 
 - The Bay Bike Share has two datasets: a static one and a dynamic one.  The static one covers an historic period of about 3 years.  The dynamic one updates every 10 minutes or so.  The static one is the one we will use in class and in this project.  The reason is that is much easier to learn SQL against a static target instead of a moving target.
 
-- The static tables we will be using in this class are in the dataset **san_francisco** :
+- (USE THESE TABLES!) The static tables we will be using in this class are in the dataset **san_francisco** :
 
   * bikeshare_stations
 
@@ -129,22 +131,24 @@ Paste your SQL query and answer the question in a sentence.  Be sure you properl
 
 - What's the size of this dataset? (i.e., how many trips)
 
-- What is the earliest start time and latest end time for a trip?
+- What is the earliest start date and time and latest end date and time for a trip?
 
 - How many bikes are there?
 
-### Advanced queries
+### Bonus activity queries (optional - not graded)
 
 The bike share dynamic dataset offers multiple tables that can be joined to learn more interesting facts about the bike share business across all regions. These advanced queries are designed to challenge you to explore the other tables, using only the available metadata to create views that give you a broader understanding of the overall volumes across the regions(each region has multiple stations)
 
-We can create a view against the dynamic dataset to join to our static dataset.
+We can create a temporary table or view against the dynamic dataset to join to our static dataset.
 
-Here is some code to create the view:
+Here is some SQL to pull the region_id and station_id from the dynamic dataset.  You can save the results of this query to a temporary table or view.  You can then join the static tables to this table or view to find the region:
 ```sql
-TBD
+#standardSQL
+select region_id, station_id
+from `bigquery-public-data.san_francisco_bikeshare.bikeshare_station_info`
 ```
 
-- Top 25 popular station pairs in each region
+- Top 5 popular station pairs in each region
 
 - Top 3 most popular regions(stations belong within 1 region)
 
@@ -174,7 +178,7 @@ TBD
 
 ## Part 2 - Querying data from the BigQuery CLI 
 
-- Try BQ from the command line:
+- Use BQ from the Linux command line:
 
   * General query structure
 
@@ -255,6 +259,8 @@ Create a Jupyter Notebook against a Python 3 kernel named Project_1.ipynb in the
 
 #### Run queries in the notebook 
 
+You can run queries 
+
 ```
 ! bq query --use_legacy_sql=FALSE '<your-query-here>'
 ```
@@ -284,3 +290,4 @@ Create a Jupyter Notebook against a Python 3 kernel named Project_1.ipynb in the
 ### Resource: see example .ipynb file 
 
 [Example Notebook](example.ipynb)
+
