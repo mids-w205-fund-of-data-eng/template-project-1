@@ -10,8 +10,17 @@
 
 - You're a data scientist at Lyft Bay Wheels (https://www.lyft.com/bikes/bay-wheels), formerly known as Ford GoBike, the
   company running Bay Area Bikeshare. You are trying to increase ridership, and
-  you want to offer deals through the mobile app to do so. What deals do you
-  offer though? Currently, your company has several options which can change over time.  Please visit the website to see the current offers and other marketing information.  Frequent offers include: Single Ride, Monthly Membership, Annual Membership, Bike Share for All, Access Pass, Corporate Membership, etc.
+  you want to offer deals through the mobile app to do so. 
+  
+- What deals do you
+  offer though? Currently, your company has several options which can change over time.  Please visit the website to see the current offers and other marketing information. Frequent offers include: 
+  * Single Ride 
+  * Monthly Membership
+  * Annual Membership
+  * Bike Share for All
+  * Access Pass
+  * Corporate Membership
+  * etc.
 
 - Through this project, you will answer these questions: 
 
