@@ -137,7 +137,23 @@ Paste your SQL query and answer the question in a sentence.  Be sure you properl
 
 - How many bikes are there?
 
-### Bonus activity queries (optional - not graded)
+
+### Questions of your own
+- Make up 3 questions and answer them using the Bay Area Bike Share Trips Data.  These questions MUST be different than any of the questions and queries you ran above.
+
+- Question 1: 
+  * Answer:
+  * SQL query:
+
+- Question 2:
+  * Answer:
+  * SQL query:
+
+- Question 3:
+  * Answer:
+  * SQL query:
+
+### Bonus activity queries (optional - not graded - just this section is optional, all other sections are required)
 
 The bike share dynamic dataset offers multiple tables that can be joined to learn more interesting facts about the bike share business across all regions. These advanced queries are designed to challenge you to explore the other tables, using only the available metadata to create views that give you a broader understanding of the overall volumes across the regions(each region has multiple stations)
 
@@ -157,22 +173,6 @@ from `bigquery-public-data.san_francisco_bikeshare.bikeshare_station_info`
 - Total trips for each short station name in each region
 
 - What are the top 10 used bikes in each of the top 3 region. these bikes could be in need of more frequent maintenance.
-
-
-### Questions of your own
-- Make up 3 questions and answer them using the Bay Area Bike Share Trips Data.  These questions MUST be different than any of the questions and queries you ran above.
-
-- Question 1: 
-  * Answer:
-  * SQL query:
-
-- Question 2:
-  * Answer:
-  * SQL query:
-
-- Question 3:
-  * Answer:
-  * SQL query:
 
 ---
 
