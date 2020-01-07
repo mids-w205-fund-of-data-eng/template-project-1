@@ -39,23 +39,25 @@
   * create new offers for hidden business opportunities you have found
   * etc. 
 
-#### All Work __MUST__ be done in the Google Cloud Platform
+#### All Work MUST be done in the Google Cloud Platform
 
-In the past, some students have tried to do the work outside of the GCP, using their desktop or other environments.  Please don't so this.  For one reason, it's cheating, which can subject a student to academic misconduct charges.  Another reason is that this project is a great way to pick up some cloud skills, much needed in industry.
+In the past, some students have tried to do the work outside of the GCP, to avoid learning how to work in the cloud, using their desktop or other environments.  Please do NOT do this!  For one reason, it's cheating, which can subject a student to academic misconduct charges.  Another reason is that this project is a great way to pick up some cloud skills, much needed in industry.
 
-#### The Majority of Work __MUST__ be done using BigQuery SQL
+#### The Majority of Work MUST be done using BigQuery SQL
 
-You should primarily use BigQuery SQL.  In the past, some students have tried to pull down the entire dataset into Pandas or even into another SQL database.  Please do not do this, as before it's cheating, and you are not picking up SQL skills against a big data scale-out SQL platform.
-
+In the past, some students have pulled all of the data (or large parts of the data) down to their desktop (or another environment other than BigQuery) to avoid learning how to work with BigQuery.  Please do NOT do this!  For one reason, it's cheating, which can subject a student to academic misconduct charges.  Another reason is that this project is a great way to pick up some big data SQL skills, much needed in industry.
 
 #### Temporary Tables and Views
 
-You can make intermediate temporary tables or view in your own dataset in BigQuery as you like.  These make data exploration much easier.  It's much easier when you have made a temporary table with only clean data, filtered rows, filtered columns, new columns, summary data, etc.  
+You can make intermediate temporary tables or view in your own dataset in BigQuery as you like.  Actually, this is a great way to work!  These make data exploration much easier.  It's much easier when you have made temporary tables or views with only clean data, filtered rows, filtered columns, new columns, summary data, etc.  
 
-The results of your BigQuery SQL will be read into Pandas, where you will use the skills you learned in the Python class to print formatted Pandas tables, simple data visualizations using Seaborn / Matplotlib, etc.  
+If you use intermediate temporary tables or views, you should include the SQL used to create these, along with a brief note mentioning that you used the temporary table or view.
 
-You can use Pandas for simple transformations, but remember the bulk of work should be done using Google BigQuery.
+#### Pandas, Data Visualizations
 
+In the final Jupyter Notebook, the results of your BigQuery SQL will be read into Pandas, where you will use the skills you learned in the Python class to print formatted Pandas tables, simple data visualizations using Seaborn / Matplotlib, etc.  
+
+You can use Pandas for simple transformations, but remember the bulk of work should be done using Google BigQuery SQL.
 
 #### GitHub Procedures
 
