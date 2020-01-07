@@ -282,7 +282,9 @@ select start_station_name, end_station_name
 from `bigquery-public-data.san_francisco.bikeshare_trips`
 where start_station_name <> end_station_name
 limit 10
+```
 
+```python
 my_panda_data_frame
 ```
 
