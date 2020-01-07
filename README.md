@@ -146,7 +146,7 @@ We can create a temporary table or view against the dynamic dataset to join to o
 Here is some SQL to pull the region_id and station_id from the dynamic dataset.  You can save the results of this query to a temporary table or view.  You can then join the static tables to this table or view to find the region:
 ```sql
 #standardSQL
-select region_id, station_id
+select distinct region_id, station_id
 from `bigquery-public-data.san_francisco_bikeshare.bikeshare_station_info`
 ```
 
