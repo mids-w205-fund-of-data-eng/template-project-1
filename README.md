@@ -163,18 +163,18 @@ TBD
 
 ### Queries
 
-1. Rerun last week's queries using bq command line tool (Paste your bq
+1. Rerun the first 3 queries from Part 1 using bq command line tool (Paste your bq
    queries and results here, using properly formatted using markdown):
 
-- What's the size of this dataset? (i.e., how many trips)
+  * What's the size of this dataset? (i.e., how many trips)
 
-- What is the earliest start time and latest end time for a trip?
+  * What is the earliest start time and latest end time for a trip?
 
-- How many bikes are there?
+  * How many bikes are there?
 
 2. New Query (Paste your SQL query and answer the question in a sentence, using properly formatted markdown):
 
-- How many trips are in the morning vs in the afternoon?
+  * How many trips are in the morning vs in the afternoon?
 
 
 ### Project Questions
@@ -227,7 +227,7 @@ answers below.
 
 ### Get Going
 
-Create a Jupyter Notebook against a Python 3 kernel named Project3.ipynb in the assignment branch of your repo.
+Create a Jupyter Notebook against a Python 3 kernel named Project_1.ipynb in the assignment branch of your repo.
 
 #### Run queries in the notebook 
 
@@ -241,7 +241,7 @@ Create a Jupyter Notebook against a Python 3 kernel named Project3.ipynb in the 
 - Query those tables the same way as in `example.ipynb`
 
 
-#### Report in the form of the Jupter Notebook
+#### Report in the form of the Jupter Notebook named Project_1.ipynb
 
 - Using markdown cells, MUST definitively state and answer the two project questions:
 
