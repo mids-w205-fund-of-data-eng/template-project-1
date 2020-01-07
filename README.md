@@ -60,11 +60,11 @@ If you decide to make more changes after you have created a pull request, you ca
 
 We have broken it down into 3 parts, about 1 week's work each to help you stay on track, however, **you will only turn in the project once  at the end of part 3!**
 
-In Part 1, we will query using the Google BigQuery GUI interface in the cloud.
+- In Part 1, we will query using the Google BigQuery GUI interface in the cloud.
 
-In Part 2, we will query using the Linux command line from our virtual machine in the cloud.
+- In Part 2, we will query using the Linux command line from our virtual machine in the cloud.
 
-In Part 3, we will query from a Jupyter Notebook in our virtual machine in the cloud, save the results into Pandas, and present a report enhanced by Pandas output tables and simple data visualizations using Seaborn / Matplotlib.
+- In Part 3, we will query from a Jupyter Notebook in our virtual machine in the cloud, save the results into Pandas, and present a report enhanced by Pandas output tables and simple data visualizations using Seaborn / Matplotlib.
 
 ---
 
