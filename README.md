@@ -80,7 +80,7 @@ The project workflow follows this pattern, which may be repeated as many times a
 - Make changes to existing files as needed.
 - Add new files as needed
 - Stage modified files `git add <filename>`
-- Commit staged files `git commit -m "<meaningful comment about your changes>"
+- Commit staged files `git commit -m "<meaningful comment about your changes>"`
 - Push the commit on your assignment branch from your clone to GitHub `git push origin assignment`
 
 Once you are done, go to the GitHub web interface and create a pull request comparing the assignment branch to the master branch.  Add your instructor, and only your instructor, as the reviewer.  The date and time stamp of the pull request is considered the submission time for late penalties. 
