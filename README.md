@@ -4,7 +4,7 @@
   Google Cloud Platform (GCP) and BiqQuery. You'll answer business-driven
   questions using public datasets housed in GCP. To give you experience with
   different ways to use those datasets, you will use the web UI (BiqQuery) and
-  the command-line tools, and work with them in jupyter notebooks.
+  the command-line tools, and work with them in Jupyter Notebooks.
 
 #### Problem Statement
 
@@ -12,8 +12,7 @@
   company running Bay Area Bikeshare. You are trying to increase ridership, and
   you want to offer deals through the mobile app to do so. 
   
-- What deals do you
-  offer though? Currently, your company has several options which can change over time.  Please visit the website to see the current offers and other marketing information. Frequent offers include: 
+- What deals do you offer though? Currently, your company has several options which can change over time.  Please visit the website to see the current offers and other marketing information. Frequent offers include: 
   * Single Ride 
   * Monthly Membership
   * Annual Membership
@@ -39,25 +38,13 @@
   * create new offers for hidden business opportunities you have found
   * etc. 
 
-#### All Work MUST be done in the Google Cloud Platform
+#### All Work MUST be done in the Google Cloud Platform (GCP) / The Majority of Work MUST be done using BigQuery SQL / Usage of Temporary Tables, Views, Pandas, Data Visualizations
 
-In the past, some students have tried to do the work outside of the GCP, to avoid learning how to work in the cloud, using their desktop or other environments.  Please do NOT do this!  For one reason, it's cheating, which can subject a student to academic misconduct charges.  Another reason is that this project is a great way to pick up some cloud skills, much needed in industry.
+A couple of the goals of w205 are for students to learn how to work in a cloud environment (such as GCP) and how to use SQL against a big data data platform (such as Google BigQuery).  In keeping with these goals, please do all of your work in GCP, and the majority of your analytics work using BigQuery SQL queries.
 
-#### The Majority of Work MUST be done using BigQuery SQL
+You can make intermediate temporary tables or views in your own dataset in BigQuery as you like.  Actually, this is a great way to work!  These make data exploration much easier.  It's much easier when you have made temporary tables or views with only clean data, filtered rows, filtered columns, new columns, summary data, etc.  If you use intermediate temporary tables or views, you should include the SQL used to create these, along with a brief note mentioning that you used the temporary table or view.
 
-In the past, some students have pulled all of the data (or large parts of the data) down to their desktop (or another environment other than BigQuery) to avoid learning how to work with BigQuery.  Please do NOT do this!  For one reason, it's cheating, which can subject a student to academic misconduct charges.  Another reason is that this project is a great way to pick up some big data SQL skills, much needed in industry.
-
-#### Temporary Tables and Views
-
-You can make intermediate temporary tables or views in your own dataset in BigQuery as you like.  Actually, this is a great way to work!  These make data exploration much easier.  It's much easier when you have made temporary tables or views with only clean data, filtered rows, filtered columns, new columns, summary data, etc.  
-
-If you use intermediate temporary tables or views, you should include the SQL used to create these, along with a brief note mentioning that you used the temporary table or view.
-
-#### Pandas, Data Visualizations
-
-In the final Jupyter Notebook, the results of your BigQuery SQL will be read into Pandas, where you will use the skills you learned in the Python class to print formatted Pandas tables, simple data visualizations using Seaborn / Matplotlib, etc.  
-
-You can use Pandas for simple transformations, but remember the bulk of work should be done using Google BigQuery SQL.
+In the final Jupyter Notebook, the results of your BigQuery SQL will be read into Pandas, where you will use the skills you learned in the Python class to print formatted Pandas tables, simple data visualizations using Seaborn / Matplotlib, etc.  You can use Pandas for simple transformations, but please remember the bulk of work should be done using Google BigQuery SQL.
 
 #### GitHub Procedures
 
@@ -65,7 +52,7 @@ In your Python class you used GitHub, with a single repo for all assignments, wh
 
 Each project, including this one, will have it's own repo.
 
-Important:  in w205, we will NEVER MERGE!
+Important:  In w205, please never merge your assignment branch to the master branch. 
 
 Using the git command line: clone down the repo, leave the master branch untouched, create an assignment branch, and move to that branch:
 - Open a linux command line to your virtual machine and be sure you are logged in as jupyter.
@@ -93,7 +80,9 @@ If you decide to make more changes after you have created a pull request, you ca
 
 ## Parts 1, 2, 3
 
-We have broken it down into 3 parts, about 1 week's work each to help you stay on track, however, **you will only turn in the project once  at the end of part 3!**
+We have broken down this project into 3 parts, about 1 week's work each to help you stay on track.
+
+**You will only turn in the project once  at the end of part 3!**
 
 - In Part 1, we will query using the Google BigQuery GUI interface in the cloud.
 
@@ -105,17 +94,21 @@ We have broken it down into 3 parts, about 1 week's work each to help you stay o
 
 ## Part 1 - Querying Data with BigQuery
 
-### Google Cloud Helpful Links
+### SQL Tutorial
+
+Please go through this SQL tutorial to help you learn the basics of SQL to help you complete this project.
 
 SQL tutorial: https://www.w3schools.com/sql/default.asp
+
+### Google Cloud Helpful Links
 
 Read: https://cloud.google.com/docs/overview/
 
 BigQuery: https://cloud.google.com/bigquery/
 
-Public Datasets: https://cloud.google.com/bigquery/public-data  Search on bike share and click on it and follow instruction to add the pin to the Google BigQuery interface.
+Public Datasets: Bring up your Google BigQuery console, open the menu for the public datasets, and navigate to the the dataset san_francisco.
 
-- The Bay Bike Share has two datasets: a static one and a dynamic one.  The static one covers an historic period of about 3 years.  The dynamic one updates every 10 minutes or so.  The static one is the one we will use in class and in this project.  The reason is that is much easier to learn SQL against a static target instead of a moving target.
+- The Bay Bike Share has two datasets: a static one and a dynamic one.  The static one covers an historic period of about 3 years.  The dynamic one updates every 10 minutes or so.  THE STATIC ONE IS THE ONE WE WILL USE IN CLASS AND IN THE PROJECT. The reason is that is much easier to learn SQL against a static target instead of a moving target.
 
 - (USE THESE TABLES!) The static tables we will be using in this class are in the dataset **san_francisco** :
 
@@ -192,7 +185,7 @@ from `bigquery-public-data.san_francisco_bikeshare.bikeshare_station_info`
 ### Queries
 
 1. Rerun the first 3 queries from Part 1 using bq command line tool (Paste your bq
-   queries and results here, using properly formatted using markdown):
+   queries and results here, using properly formatted markdown):
 
   * What's the size of this dataset? (i.e., how many trips)
 
