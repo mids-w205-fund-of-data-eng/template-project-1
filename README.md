@@ -76,13 +76,16 @@ Once you are done, go to the GitHub web interface and create a pull request comp
 
 If you decide to make more changes after you have created a pull request, you can simply close the pull request (without merge!), make more changes, stage, commit, push, and create a final pull request when you are done.  Note that the last data and time stamp of the last pull request will be considered the submission time for late penalties.
 
+Make sure you receive the emails related to your repository! Your project feedback will be given as comment on the pull request. When you receive the feedback, you can address problems or simply comment that you have read the feedback. 
+AFTER receiving and answering the feedback, merge you PR to master. Your project only counts as complete once this is done.
+
 ---
 
 ## Parts 1, 2, 3
 
 We have broken down this project into 3 parts, about 1 week's work each to help you stay on track.
 
-**You will only turn in the project once  at the end of part 3!**
+**You will only turn in the project once at the end of part 3!**
 
 - In Part 1, we will query using the Google BigQuery GUI interface in the cloud.
 
